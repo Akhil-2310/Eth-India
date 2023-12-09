@@ -1,20 +1,8 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
-import Explore from "../pages/Explore";
 
-const Navbar = () => {
-  const navigate = useNavigate();
-
-  function handleClick() {
-    navigate("/explore");
-  }
+const Explore = () => {
   return (
-    <div>
+    <>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -42,36 +30,47 @@ const Navbar = () => {
                 <a>Item 1</a>
               </li>
               <li>
-                <a>Item 2</a>
-              </li>
-              <li>
                 <a>Item 3</a>
               </li>
             </ul>
           </div>
-          <a>zK-DaoHub</a>
+          <a className="btn btn-ghost text-xl">zK-DaoHub</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>All</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Joined</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Explore</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn" onClick={handleClick}>
-            Explore DAO's
-          </button>
+          <a className="btn">Button</a>
         </div>
       </div>
-    </div>
+
+      <div className="card w-96 bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
-export default Navbar;
+export default Explore;

@@ -7,6 +7,7 @@ const Hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://www.simplilearn.com/ice9/free_resources_article_thumb/DAO.png"
+            alt="dao"
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
