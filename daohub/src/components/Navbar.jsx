@@ -44,9 +44,9 @@ const Navbar = () => {
               <li>
                 <a>Item 2</a>
               </li>
-              <li>
+              {/* <li>
                 <a>Item 3</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <a>zK-DaoHub</a>
@@ -54,19 +54,24 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>About</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Features</a>
             </li>
-            <li>
+            {/* <li>
               <a>Item 3</a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="navbar-end">
           <button className="btn" onClick={handleClick}>
             Explore DAO's
+          </button>
+        </div>
+        <div className="navbar-end">
+          <button className="btn" onClick={handleClick}>
+            Connect Wallet
           </button>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import "./App.css";
+import { AnonAadhaarProvider } from "anon-aadhaar-react";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,15 +10,20 @@ import {
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
 
+const app_id = process.env.NEXT_PUBLIC_APP_ID || "";
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" exact element={<Home/>} />
-        <Route path="/explore" exact element={<Explore/>} />
-      </Routes>
-    </Router>
-    //<Home/>
+    <>
+      <AnonAadhaarProvider _appId={app_id} _testing={false}>
+        <Router>
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/explore" exact element={<Explore />} />
+          </Routes>
+        </Router>
+      </AnonAadhaarProvider>
+    </>
   );
 }
 
