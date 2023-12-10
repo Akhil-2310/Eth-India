@@ -10,10 +10,10 @@ const Card = () => {
             <img src={download} alt="Trust" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Trust</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 className="card-title">Privacy</h2>
+            <p>Focused on privacy</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary">Get started</button>
             </div>
           </div>
         </div>
@@ -25,10 +25,10 @@ const Card = () => {
             <img src={download} alt="Trust" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Trust</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 className="card-title">Anonymity</h2>
+            <p>Anonymously be present</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary">Get started</button>
             </div>
           </div>
         </div>
